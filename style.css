@@ -1,0 +1,139 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1a365d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #cbd5e1;
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+/* Screens (Hide/Show Logic) */
+.screen {
+    display: none;
+}
+.screen.active {
+    display: block;
+}
+.hide {
+    display: none !important;
+}
+
+/* Typography & Buttons */
+h1 { color: #1a365d; margin-bottom: 15px; }
+p { margin-bottom: 25px; color: #64748b; }
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.primary-btn {
+    background-color: #2563eb;
+    color: white;
+}
+.primary-btn:hover { background-color: #1d4ed8; }
+
+.secondary-btn {
+    background-color: #475569;
+    color: white;
+    margin-top: 20px;
+}
+.secondary-btn:hover { background-color: #334155; }
+
+/* Quiz Layout */
+.quiz-header {
+    text-align: left;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.options-grid {
+    display: grid;
+    gap: 15px;
+}
+
+.option-btn {
+    background-color: #f8fafc;
+    border: 2px solid #e2e8f0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s;
+}
+
+.option-btn:hover {
+    background-color: #e2e8f0;
+}
+
+/* Correct and Wrong Answer States */
+.option-btn.correct {
+    background-color: #dcfce7;
+    border-color: #22c55e;
+    color: #166534;
+}
+
+.option-btn.wrong {
+    background-color: #fee2e2;
+    border-color: #ef4444;
+    color: #991b1b;
+}
+
+.option-btn:disabled {
+    cursor: not-allowed;
+}

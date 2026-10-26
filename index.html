@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamArena — Competitive Exam Practice Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">ExamArena</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Practice Sets</a></li>
+            <li><a href="#">Leaderboard</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="container">
+        <!-- Welcome Section -->
+        <div id="welcome-screen" class="screen active">
+            <h1>Ace Your Competitive Exams</h1>
+            <p>Test your knowledge with our curated practice sets for Data Structures, Algorithms, and Aptitude.</p>
+            <button id="start-btn" class="btn primary-btn">Start Practice Quiz</button>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <h2 id="question-text">Question will appear here</h2>
+                <span id="question-tracker">Question 1 / 3</span>
+            </div>
+            <div id="options-container" class="options-grid">
+                <!-- Options will be injected here via JavaScript -->
+            </div>
+            <div class="quiz-footer">
+                <button id="next-btn" class="btn secondary-btn hide">Next Question</button>
+            </div>
+        </div>
+
+        <!-- Result Section -->
+        <div id="result-screen" class="screen">
+            <h2>Quiz Completed!</h2>
+            <p>Your Score: <span id="final-score">0</span> / <span id="total-questions">0</span></p>
+            <button id="restart-btn" class="btn primary-btn">Try Again</button>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
